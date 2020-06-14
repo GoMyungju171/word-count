@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+
+<style>
+    h1 {padding-left: 550px; 
+		font-size: 50px;
+		color: white; font-family: 'Metal Mania', cursive;}
+    @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');    
+    
+</style>
+
+</head>
+<body style="background-color: black;">
+    <div>
+    <h1>WORD COUNT</h1>
+    <span style="padding-left: 650px; color: white; font-family: 'Metal Mania', cursive; font-size: 15px;">by moooondu</h2></span>
+
+    
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="20" name="fulltext" style="position:relative;
+        color: white; margin: 50px; font-size: 20px;
+        width:600px;
+        height:500px; border-style: none;
+         background:#333333;
+         border-radius: 10px; margin-left: 430px; "> </textarea>
+        <br>
+        <input type="submit" value="Push the button" style="margin-left: 650px; width: 150px; height: 50px; color: white; background-color: black; font-family: 'Metal Mania', cursive; font-size: 15px;">
+    </form>
+
+</body>
+</html>

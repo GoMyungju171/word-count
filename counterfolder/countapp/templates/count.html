@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+        h1 {font-family: 'Source Code Pro', monospace;
+        padding-left: 420px; color: white; font-size: 20px;}
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <br>
+    <br>
+    <h1 style="font-size: 40px; margin-left: 220px;">Results</h1><br><br><br>
+
+
+    <h1>Number Of Words : 
+        <br><p style="color: turquoise;">" {{total}} "</p></h1><br>
+
+    <h1>Entered Text : <br>   
+        <p style="color: turquoise; width: 600px;">"{{alltext}}"</p></h1><br>
+
+    <h1>All Words : <br>
+    {% for word, frequency in dictionary %}
+    <p style="color: turquoise;">"{{word}}: {{frequency}}"</p>
+    <br>
+    {% endfor %}</h1>
+    <br>
+    <br>
+    <br>
+    <a href="{%url 'home' %}" style="font-size: 30px; margin-left: 600px; color: white;">Again!</a>
+</body>
+</html>
